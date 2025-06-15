@@ -76,15 +76,14 @@
             cursor: pointer;
         }
 
-        /* Hero Section - Mobile Optimized for Wide Photos */
+        /* Hero Section - Treat as Portrait Photos */
         .hero {
-            min-height: 70vh; /* Shorter on mobile */
+            min-height: 100vh;
             position: relative;
             overflow: hidden;
             display: flex;
-            align-items: flex-end;
+            align-items: center;
             justify-content: center;
-            padding-bottom: 2rem;
         }
 
         .slideshow-container {
@@ -103,11 +102,10 @@
             width: 100%;
             height: 100%;
             opacity: 0;
-            transition: all 1.5s ease-in-out;
-            background-size: contain;
+            transition: opacity 2s ease-in-out;
+            background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            background-color: var(--warm-white);
         }
 
         .slide.active {
@@ -123,9 +121,9 @@
             bottom: 0;
             background: linear-gradient(
                 to bottom, 
-                rgba(0,0,0,0.2) 0%, 
-                rgba(0,0,0,0.1) 40%, 
-                rgba(0,0,0,0.7) 100%
+                rgba(0,0,0,0.3) 0%, 
+                rgba(0,0,0,0.1) 50%, 
+                rgba(0,0,0,0.6) 100%
             );
             z-index: 2;
         }
@@ -141,12 +139,8 @@
             z-index: 10;
             text-align: center;
             color: white;
-            padding: 1.5rem 1rem;
+            padding: 2rem 1rem;
             max-width: 90%;
-            background: rgba(0,0,0,0.6);
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            margin-bottom: 2rem;
         }
 
         .hero-content h1 {
@@ -689,4 +683,10 @@
                         <h3>茶道体験プラン</h3>
                         <p>畳の茶室でお抹茶を点てて、季節の和菓子を味わいながら、心がじんわりと落ち着いていく——そんな、"静かな感動"を味わえます。</p>
                         <div class="service-price">10,000円/人（税込）</div>
-                        <p style="fon
+                        <p style="font-size: 0.9rem; margin-top: 1rem; color: #d4af37;">4名以上のご予約で20%OFF!</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">時</div>
+                        <h3>選べる時間帯</h3>
+ 
