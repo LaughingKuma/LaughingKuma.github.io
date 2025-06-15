@@ -82,8 +82,9 @@
             position: relative;
             overflow: hidden;
             display: flex;
-            align-items: center;
+            align-items: flex-end;
             justify-content: center;
+            padding-bottom: 2rem;
         }
 
         .slideshow-container {
@@ -103,10 +104,9 @@
             height: 100%;
             opacity: 0;
             transition: all 1.5s ease-in-out;
-            background-size: contain;
+            background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            background-color: var(--warm-white);
         }
 
         .slide.active {
@@ -122,8 +122,8 @@
             bottom: 0;
             background: linear-gradient(
                 to bottom, 
-                rgba(0,0,0,0.4) 0%, 
-                rgba(0,0,0,0.2) 50%, 
+                rgba(0,0,0,0.3) 0%, 
+                rgba(0,0,0,0.1) 40%, 
                 rgba(0,0,0,0.6) 100%
             );
             z-index: 2;
@@ -142,6 +142,7 @@
             color: white;
             padding: 2rem 1rem;
             max-width: 90%;
+            margin-bottom: 4rem;
         }
 
         .hero-content h1 {
@@ -688,5 +689,4 @@
                     </div>
                     
                     <div class="service-card">
-                        <div class="service-icon">時</div>
-                        
+                        <div class="serv
